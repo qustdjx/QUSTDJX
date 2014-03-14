@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ <EditText 
+        android:id="@+id/edit"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:hint="名字修改"
+        />
+ <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 
+    >
+     
+  
+    <Button 
+        android:id="@+id/clickbtnSure"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="确认" 
+         android:onClick="buttonSure"
+         />
+
+     <Button
+         android:id="@+id/clickbtnCancel"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/clickbtnSure"
+         android:onClick="buttonCancel"
+         android:text="取消" />
+    
+    </RelativeLayout> 
+</LinearLayout>
